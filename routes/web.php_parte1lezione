@@ -1,0 +1,27 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+//Rotta statica
+Route::get('/', function () {
+    return 'Sono io';
+});
+
+Route::get('/chi-sono', function () {
+    return 'Mi presento';
+});
+
+Route::get('/contatti', function () {
+    return 'form di contatti';
+});
+
+//Rotte parametriche o dinamica
+
+Route::get('/profilo/{nome}', function ($nome) {
+
+    return 'Profilo di ' . $nome;
+});
+
+Route::get('/somma/{num1}/{num2}', function ($num1, $num2) {
+    return $num1 + $num2;
+});
