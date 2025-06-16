@@ -39,8 +39,9 @@
 
         <div class="card" style="width: 18rem;">
             <ul class="list-group list-group-flush">
+
                 @foreach ($services as $service)
-                    <li class="list-group-item"> {{ $service }}</li>
+                    <li class="list-group-item">{{ $service['id'] }} - {{ $service['title'] }} </li>
                 @endforeach
             </ul>
         </div>
