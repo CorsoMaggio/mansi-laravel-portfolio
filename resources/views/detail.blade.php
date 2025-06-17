@@ -1,4 +1,7 @@
 <x-app>
-    <h1>Ciao, sei dentro {{ $service['title'] }}</h1>
-    <p>{{ $service['description'] }}</p>
+    <x-slot name="title">
+        Dettaglio di {{ $service['title'] }}
+    </x-slot>
+
+    <x-card :service="$service"> </x-card>
 </x-app>
