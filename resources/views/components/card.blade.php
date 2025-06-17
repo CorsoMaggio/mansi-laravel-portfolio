@@ -1,6 +1,9 @@
- <div class="col">
+ <div {{ $attributes }}>
 
      <div class="card h-100">
+         @if ($status)
+             <img src="" alt="">IMMAGINE
+         @endif
          <div class="card-body">
              <h5 class="card-title"> {{ $service['id'] }} - {{ $service['title'] }}</h5>
          </div>

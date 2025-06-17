@@ -3,5 +3,5 @@
         Dettaglio di {{ $service['title'] }}
     </x-slot>
 
-    <x-card :service="$service"> </x-card>
+    <x-card class="col" :service="$service" :status="true"> </x-card>
 </x-app>
