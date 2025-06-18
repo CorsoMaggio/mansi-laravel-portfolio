@@ -60,4 +60,18 @@ class PageController extends Controller
 
         abort(404);
     }
+
+    public function send(Request $request)
+    {
+
+        $request->validate(
+            [
+                'firstname' => ['required', 'max:20'],
+                'lastname' => 'required',
+                'email' => ['required', 'email'],
+                'body' => ['sometimes', 'min:10'],
+            ]
+        );
+        dd($request->all());
+    }
 }

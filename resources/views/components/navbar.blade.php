@@ -1,4 +1,5 @@
    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
        <div class="container-fluid">
            <a class="navbar-brand" href="/">Test</a>
            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -11,7 +12,7 @@
                        <a class="nav-link active" aria-current="page" href="/">Homepage</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link" href="/chi-sono">Chi Sono</a>
+                       <a class="nav-link" href="/chi-sono">Chi Sono Io</a>
                    </li>
                    <li class="nav-item">
                        <a class="nav-link" href="/contatti">Contatti</a>

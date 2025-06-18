@@ -1,4 +1,4 @@
- <div {{ $attributes }}>
+ <div>
 
      <div class="card h-100">
          @if ($status)
